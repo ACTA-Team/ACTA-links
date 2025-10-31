@@ -11,7 +11,13 @@ import {
   faSun,
   faGlobe,
 } from "@fortawesome/free-solid-svg-icons";
-import { faGithub, faTwitter, faLinkedin, faDiscord } from "@fortawesome/free-brands-svg-icons";
+import {
+  faGithub,
+  faTwitter,
+  faLinkedin,
+  faDiscord,
+  faInstagram,
+} from "@fortawesome/free-brands-svg-icons";
 
 config.autoAddCss = false;
 
@@ -25,3 +31,4 @@ export const GithubIcon = (props: any) => <FontAwesomeIcon icon={faGithub} {...p
 export const TwitterIcon = (props: any) => <FontAwesomeIcon icon={faTwitter} {...props} />;
 export const LinkedinIcon = (props: any) => <FontAwesomeIcon icon={faLinkedin} {...props} />;
 export const DiscordIcon = (props: any) => <FontAwesomeIcon icon={faDiscord} {...props} />;
+export const InstagramIcon = (props: any) => <FontAwesomeIcon icon={faInstagram} {...props} />;

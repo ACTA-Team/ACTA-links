@@ -1,6 +1,12 @@
 import Link from "next/link";
 import Image from "next/image";
-import { GlobeIcon, GithubIcon, TwitterIcon, LinkedinIcon } from "@/components/font-awesome-icons";
+import {
+  GlobeIcon,
+  GithubIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  InstagramIcon,
+} from "@/components/font-awesome-icons";
 
 export function Footer() {
   return (
@@ -105,6 +111,17 @@ export function Footer() {
                 >
                   <LinkedinIcon className="w-3 sm:w-4 h-3 sm:h-4" />
                   LinkedIn
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://www.instagram.com/acta.xyz?igsh=MTF3czdzYTVlemxmMw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 text-xs sm:text-sm flex items-center gap-2"
+                >
+                  <InstagramIcon className="w-3 sm:w-4 h-3 sm:h-4" />
+                  Instagram
                 </Link>
               </li>
             </ul>

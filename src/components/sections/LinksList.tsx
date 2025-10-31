@@ -6,6 +6,7 @@ import {
   GithubIcon,
   TwitterIcon,
   LinkedinIcon,
+  InstagramIcon,
 } from "@/components/font-awesome-icons";
 
 export function LinksList() {
@@ -39,6 +40,15 @@ export function LinksList() {
         </span>
       </Link>
       <Link
+        href="https://nft.acta.build"
+        className="flex items-center gap-3 p-3 sm:p-4 border border-gray-200 dark:border-zinc-800 rounded-md hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
+      >
+        <GlobeIcon className="text-gray-700 dark:text-gray-300 w-4 sm:w-5 h-4 sm:h-5" />
+        <span className="font-medium text-gray-900 dark:text-gray-100 text-sm sm:text-base">
+          Redeem your NFT
+        </span>
+      </Link>
+      <Link
         href="https://github.com/ACTA-Team"
         className="flex items-center gap-3 p-3 sm:p-4 border border-gray-200 dark:border-zinc-800 rounded-md hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
       >
@@ -63,6 +73,15 @@ export function LinksList() {
         <LinkedinIcon className="text-gray-700 dark:text-gray-300 w-4 sm:w-5 h-4 sm:h-5" />
         <span className="font-medium text-gray-900 dark:text-gray-100 text-sm sm:text-base">
           LinkedIn
+        </span>
+      </Link>
+      <Link
+        href="https://www.instagram.com/acta.xyz?igsh=MTF3czdzYTVlemxmMw=="
+        className="flex items-center gap-3 p-3 sm:p-4 border border-gray-200 dark:border-zinc-800 rounded-md hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
+      >
+        <InstagramIcon className="text-gray-700 dark:text-gray-300 w-4 sm:w-5 h-4 sm:h-5" />
+        <span className="font-medium text-gray-900 dark:text-gray-100 text-sm sm:text-base">
+          Instagram
         </span>
       </Link>
     </div>

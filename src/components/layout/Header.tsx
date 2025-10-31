@@ -1,6 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import { GithubIcon, TwitterIcon, LinkedinIcon } from "@/components/font-awesome-icons";
+import {
+  GithubIcon,
+  TwitterIcon,
+  LinkedinIcon,
+  InstagramIcon,
+} from "@/components/font-awesome-icons";
 import { AnimatedThemeToggler } from "@/components/ui/animated-theme-toggler";
 
 export function Header() {
@@ -48,6 +53,13 @@ export function Header() {
             >
               <LinkedinIcon className="w-5 h-5" />
               <span className="sr-only">LinkedIn</span>
+            </Link>
+            <Link
+              href="https://www.instagram.com/acta.xyz?igsh=MTF3czdzYTVlemxmMw=="
+              className="text-gray-700 dark:text-gray-300 hover:text-gray-900 dark:hover:text-gray-100"
+            >
+              <InstagramIcon className="w-5 h-5" />
+              <span className="sr-only">Instagram</span>
             </Link>
             <AnimatedThemeToggler className="w-full h-full p-0 [&>svg]:w-4 [&>svg]:h-4" />
           </div>
