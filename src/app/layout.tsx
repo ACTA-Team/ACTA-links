@@ -1,5 +1,6 @@
 import type React from "react";
 import { ThemeProvider } from "@/providers/theme-provider";
+import { PostHogProvider } from "@/providers/PostHogProvider";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -13,7 +14,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
-        <ThemeProvider>{children}</ThemeProvider>
+        <PostHogProvider>
+          <ThemeProvider>{children}</ThemeProvider>
+        </PostHogProvider>
       </body>
     </html>
   );
